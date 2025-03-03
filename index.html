@@ -358,6 +358,45 @@
         border-color: rgb(163, 163, 163);
       }
 
+      /* CERTIFICATIONS SECTION */
+      #certifications {
+        position: relative;
+      }
+
+      .certification-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .certification-card {
+        background: white;
+        border-radius: 2rem;
+        border: rgb(53, 53, 53) 0.1rem solid;
+        border-color: rgb(163, 163, 163);
+        padding: 1.5rem;
+        width: 250px;
+        text-align: center;
+      }
+
+      .certification-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .certification-issuer {
+        color: rgb(85, 85, 85);
+        margin-bottom: 0.5rem;
+      }
+
+      .certification-date {
+        font-size: 0.9rem;
+        color: rgb(85, 85, 85);
+      }
+
       /* CONTACT */
       #contact {
         display: flex;
@@ -418,7 +457,8 @@
           flex-wrap: wrap;
         }
         #contact,
-        #projects {
+        #projects,
+        #certifications {
           height: fit-content;
         }
         .section-container {
@@ -526,6 +566,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -542,6 +583,7 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -601,7 +643,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>Android App Development<br />Google For Developers</p>
+              <p>Android Development<br />Data Engineering<br />AI-ML<br />Cybersecurity</p>
             </div>
             <div class="details-container">
               <img
@@ -610,17 +652,12 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Tech in Computer Science<br />Galgotias University</p>
+              <p>B.Tech in Computer Science<br />Galgotias University (2022-2026)</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I am a dedicated Computer Science undergraduate at Galgotias University, Greater Noida, 
-              with hands-on experience in Android app development, data engineering, AI-ML, and cybersecurity 
-              through virtual internships with Google, AWS, and Palo Alto Networks. I have led teams in 
-              technical workshops and am passionate about building innovative solutions using programming 
-              and networking skills. I scored first rank in computer applications during school and am 
-              committed to leveraging technology for real-world impact.
+              Computer Science student with practical experience in Android development, data engineering, AI-ML, and cybersecurity through multiple internships. Strong foundation in Python, Java, C++, and web technologies with demonstrated project work. I have a proven track record of leadership, having led a team to Karkhana workshop and maintained top academic performance throughout my studies, including scoring first rank in computer applications, hardware, software, MS Office, and HTML.
             </p>
           </div>
         </div>
@@ -637,6 +674,55 @@
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Android App Development Intern</h3>
+                  <p>Google For Developers<br />Apr - Jun 2024</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Engineering Intern</h3>
+                  <p>AWS<br />Jan - Mar 2024</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AI-ML Intern</h3>
+                  <p>AWS<br />Sep - Nov 2023</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cyber Security Intern</h3>
+                  <p>Palo Alto Networks<br />May - Jul 2022</p>
+                </div>
+              </article>
+            </div>
+          </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Technical Skills</h2>
             <div class="article-container">
@@ -706,11 +792,6 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Other Skills</h2>
-            <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -718,7 +799,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>English Proficiency (Written+Verbal)</h3>
+                  <h3>Database Design</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -729,8 +810,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Computer Proficiency</h3>
-                  <p>Experienced</p>
+                  <h3>Cloud Computing</h3>
+                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
@@ -757,7 +838,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Yasa Traders</h2>
+            <h2 class="experience-sub-title project-title">E-Commerce Website</h2>
+            <p>Full-stack e-commerce platform with user authentication, shopping cart, payment processing, and inventory management.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -775,7 +857,8 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Real-Time GPU-Based Speech-to-Text Model</h2>
+            <h2 class="experience-sub-title project-title">GPU-Based Speech-to-Text Model</h2>
+            <p>High-performance speech recognition system with VSOC technology achieving 95% accuracy and 70% faster processing.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -794,6 +877,7 @@
               />
             </div>
             <h2 class="experience-sub-title project-title">Youtube Video/Audio Downloader</h2>
+            <p>Python application to download YouTube videos and extract audio with format selection and quality options.</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -803,6 +887,37 @@
               </button>
             </div>
           </div>
+          
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certification-container">
+        <div class="certification-card">
+          <h3 class="certification-title">Packet Tracer</h3>
+          <p class="certification-issuer">Cisco Networking Academy</p>
+          <p class="certification-date">Apr - May 2024</p>
+        </div>
+        <div class="certification-card">
+          <h3 class="certification-title">Database Design</h3>
+          <p class="certification-issuer">Oracle Academy</p>
+          <p class="certification-date">Dec 2023 - Jan 2024</p>
+        </div>
+        <div class="certification-card">
+          <h3 class="certification-title">Cybersecurity Fundamentals</h3>
+          <p class="certification-issuer">IBM</p>
+          <p class="certification-date">Dec 2023</p>
+        </div>
+        <div class="certification-card">
+          <h3 class="certification-title">Cloud Computing</h3>
+          <p class="certification-issuer">Infosys Springboard</p>
+          <p class="certification-date">Aug 2023</p>
         </div>
       </div>
       <img
@@ -848,6 +963,7 @@
           />
           <p><a href="https://wa.me/916202551582" target="_blank">WhatsApp</a></p>
         </div>
+       
       </div>
     </section>
     <footer>
@@ -857,6 +973,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
